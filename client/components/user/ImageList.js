@@ -7,7 +7,7 @@ export default function StandardImageList() {
     <>
       <div className=" grid grid-cols-2 sm:grid-cols-3 gap-3">
         {itemData.map((item, index) => (
-          <div className="  ">
+          <div key={index} className="  ">
             <img
               className=" aspect-square object-cover rounded-xl "
               src={item.img}
